@@ -1,1 +1,11 @@
-This is doodle text.
+<div class="card">
+		<div class="card-image">
+			<img src="https://www.google.com/logos/doodles/2014/doodle-4-google-2013-new-zealand-winner-5595355081080832-hp.jpg" style="width: 400px;">
+			<span class="card-title">Doodle Title</span>
+		</div>
+		<div class="card-content">
+			<p>Sample V-Top Doodle</p>
+		</div>
+		<div class="card-action">
+			<a href="#">This is a link</a>
+		</div>
