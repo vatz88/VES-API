@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
-    <link href="css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
     <style>
         body {
             background-color: #f5f5f5;
@@ -31,7 +31,7 @@
                         <div class="input-field col s12">
                             <input id="regno" type="text" class="validate" pattern="^[1-9]{1}[0-9]{1}[A-Za-z]{3}[0-9]{4}$" required autocomplete="off"
                                 onchange="this.value=this.value.toUpperCase()">
-                                <label for="regno" data-error="Invalid Registration Number" data-success="right">Registration number</label>
+                                <label for="regno" data-error="Invalid Registration Number">Registration number</label>
                         </div>
                     </div>
                 </form>
@@ -41,8 +41,8 @@
         </div>
     </div>
     <!-- js -->
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
         $('#getPhoto').submit(function (e) {
             e.preventDefault();
