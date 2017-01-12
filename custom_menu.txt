@@ -15,5 +15,8 @@
                 <div><a href="exam_schedule.asp?sem=WS" class="btn btn-flat" target="main">Exam Schedule</a></div>
             </div>
         </li>
+        <li>
+            <div class="collapsible-header"><a href="https://vatz88.github.io/VES-API/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
+        </li>
     </ul>
 </div>
