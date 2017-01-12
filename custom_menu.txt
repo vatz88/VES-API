@@ -23,5 +23,8 @@
                 <div><a href="hostel_mess_change.asp" class="btn btn-flat" target="main">Mess Change Request</a></div>
             </div>
         </li>
+	 <li>
+            <div class="collapsible-header"><a href="photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
+        </li>
     </ul>
 </div>
