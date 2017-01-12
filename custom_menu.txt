@@ -24,7 +24,7 @@
             </div>
         </li>
 	 <li>
-            <div class="collapsible-header"><a href="http://vatz88.in/VES-API/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
+            <div class="collapsible-header"><a href="https://vatz88.github.io/VES-API/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
         </li>
     </ul>
 </div>
