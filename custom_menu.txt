@@ -15,5 +15,13 @@
                 <div><a href="exam_schedule.asp?sem=WS" class="btn btn-flat" target="main">Exam Schedule</a></div>
             </div>
         </li>
+	<li>
+            <div class="collapsible-header"><a href="#" target="_self" class="btn btn-flat">Hosteller</a></div>
+            <div class="collapsible-body">
+                <div><a href="leave_request.asp" class="btn btn-flat" target="main">Leave Request</a></div>
+                <div><a href="Hostel_LAB_Permission.asp" class="btn btn-flat" target="main">Late Hours Permission</a></div>
+                <div><a href="hostel_mess_change.asp" class="btn btn-flat" target="main">Mess Change Request</a></div>
+            </div>
+        </li>
     </ul>
 </div>
