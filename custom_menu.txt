@@ -24,7 +24,7 @@
             </div>
         </li>
 	 <li>
-            <div class="collapsible-header"><a href="chrome.extension.getURL('photo_search.html')" class="btn btn-flat" target="main">Search Friends</a></div>
+            <div class="collapsible-header"><a href="https://raw.githubusercontent.com/VaTz88/VES-API/master/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
         </li>
     </ul>
 </div>
