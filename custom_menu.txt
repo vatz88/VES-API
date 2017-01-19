@@ -18,8 +18,5 @@
         <li>
             <div class="collapsible-header"><a href="https://vatz88.github.io/VES-API/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
         </li>
-        <li>
-            <div class="collapsible-header"><a target="_blank" href="https://medium.com/@rahulkapoor/how-i-automated-every-task-while-studying-in-vit-university-edb9748fab6a#.a6uem2zba" class="btn btn-flat" target="main">AutomateVIT</a></div>
-        </li>
     </ul>
 </div>
