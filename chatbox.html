@@ -8,11 +8,136 @@
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-73159092-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://ssl.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+    </script>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        input {
+            text-transform: uppercase;
+        }
+
+        img {
+            max-height: 400px;
+        }
+
+        #submitBtn {
+            background-color: Transparent;
+            color: black;
+        }
+    </style>
 </head>
 
-<body>
-<script id="cid0020000146442064903" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 351px;height: 521px;">{"handle":"vitapp","arch":"js","styles":{"b":100,"c":"000000","d":"000000","l":"FFFFFF","m":"FFFFFF","p":"10","r":100}}</script>
-
+<body oncontextmenu="return false">
+    <div class="container">
+        <h4>See Friends</h4>
+        <h6>Easy tool to search friends using registration number.</h6>
+        <div class="section">
+        <script id="cid0020000146442064903" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 351px;height: 521px;">{"handle":"vitapp","arch":"js","styles":{"b":100,"c":"000000","d":"000000","l":"FFFFFF","m":"FFFFFF","p":"10","r":100}}</script>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col s2 center">
+                    <button id="previousBtn" class="btn"><i class="material-icons">chevron_left</i></button>
+                </div>
+                <form class="col s8" id="getPhotoForm">
+                    <div class="row">
+                        <div class="input-field col s10">
+                            <input id="regno" type="text" class="validate" pattern="^[1-9]{1}[0-9]{1}[A-Za-z]{3}[0-9]{4}$" required autocomplete="off" onchange="this.value=this.value.toUpperCase()">
+                            <label for="regno" data-error="Invalid Registration Number">Registration number</label>
+                        </div>
+                        <div class="col s2">
+                            <button id="submitBtn" class="btn" type="submit"><i class="material-icons">send</i></button>
+                        </div>
+                    </div>
+                </form>
+                <div class="col s2 center">
+                    <button id="nextBtn" class="btn"><i class="material-icons">chevron_right</i></button>
+                </div>
+            </div>
+            <div id="showPhoto" class="row center">
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $('#getPhotoForm').submit(function(e) {
+            e.preventDefault();
+            var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + $('#regno').val();
+            var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
+            $('#showPhoto').html(imgTag);
+        });
+        $('#previousBtn').click(function() {
+            var regno = $('#regno').val();
+            var reg = regno.substring(0, 5);
+            var no = parseInt(regno.substring(5));
+            no--;
+            if (no > 0) {
+                no = no.toString();
+                // add zeros
+                switch (no.length) {
+                    case 1:
+                        no = "000" + no;
+                        break;
+                    case 2:
+                        no = "00" + no;
+                        break;
+                    case 3:
+                        no = "0" + no;
+                        break;
+                    case 2:
+                        no = no;
+                        break;
+                }
+                var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + reg + no;
+                var imgTag = '<img id"imgID" class="responsive-img" src="' + imageURL + '">';
+                var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
+                $('#showPhoto').html(imgTag);
+                $('#regno').val(reg + no);
+            }
+        });
+        $('#nextBtn').click(function() {
+            var regno = $('#regno').val();
+            var reg = regno.substring(0, 5);
+            var no = parseInt(regno.substring(5));
+            no++;
+            no = no.toString();
+            // add zeros
+            switch (no.length) {
+                case 1:
+                    no = "000" + no;
+                    break;
+                case 2:
+                    no = "00" + no;
+                    break;
+                case 3:
+                    no = "0" + no;
+                    break;
+                case 2:
+                    no = no;
+                    break;
+            }
+            var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + reg + no;
+            var imgTag = '<img id"imgID" class="responsive-img" src="' + imageURL + '">';
+            var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
+            $('#showPhoto').html(imgTag);
+            $('#regno').val(reg + no);
+        });
+    </script>
 </body>
 
 </html>
