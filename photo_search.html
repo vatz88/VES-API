@@ -5,6 +5,15 @@
     <title>Photo Search</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,13 +49,15 @@ _gaq.push(['_trackPageview']);
     </style>
 </head>
 
-<body oncontextmenu="return false">
-    <div class="container">
-        <h4>See Friends</h4>
-        <h6>Easy tool to search friends using registration number.</h6>
-        <div class="section"></div>
-        <div>
-            <div class="row">
+<body>
+  
+  <div class="row">
+   <div class="col-xs-5">
+  <script id="cid0020000146488288350" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 351px;height: 470px;">{"handle":"vitapp","arch":"js","styles":{"b":100,"c":"000000","d":"000000","l":"FFFFFF","m":"FFFFFF","p":"10","r":100,"surl":0,"cnrs":"0.35","fwtickm":1}}</script>
+      </div>
+   <div class="col-xs-7">
+       <h5>See Friends</h5>
+        <h6>Easy tool to search friends using registration number.</h6><br>
                 <div class="col s2 center">
                     <button id="previousBtn" class="btn"><i class="material-icons">chevron_left</i></button>
                 </div>
@@ -64,11 +75,12 @@ _gaq.push(['_trackPageview']);
                 <div class="col s2 center">
                     <button id="nextBtn" class="btn"><i class="material-icons">chevron_right</i></button>
                 </div>
+       <div id="showPhoto" class="row center">
             </div>
-            <div id="showPhoto" class="row center">
-            </div>
-        </div>
-    </div>
+   </div>
+ </div>
+
+
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -139,3 +151,4 @@ _gaq.push(['_trackPageview']);
 </body>
 
 </html>
+
