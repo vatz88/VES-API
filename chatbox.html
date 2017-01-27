@@ -5,39 +5,43 @@
     <title>Photo Search</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript">
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-73159092-1']);
-        _gaq.push(['_trackPageview']);
+_gaq.push(['_setAccount', 'UA-73159092-1']);
+_gaq.push(['_trackPageview']);
 
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = 'https://ssl.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://ssl.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
     </script>
     <style>
         body {
             background-color: #f5f5f5;
-            margin: 1.5em;
         }
-        
+
         input {
             text-transform: uppercase;
         }
-        
+
         img {
             max-height: 400px;
         }
-        
+
         #submitBtn {
             background-color: Transparent;
             color: black;
@@ -46,43 +50,22 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col s4" style="text-align: right;">
-            <script id="cid0020000146488288350" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 351px;height: 470px;">
-                {
-                    "handle": "vitapp",
-                    "arch": "js",
-                    "styles": {
-                        "b": 100,
-                        "c": "000000",
-                        "d": "000000",
-                        "l": "FFFFFF",
-                        "m": "FFFFFF",
-                        "p": "10",
-                        "r": 100,
-                        "surl": 0,
-                        "cnrs": "0.35",
-                        "fwtickm": 1
-                    }
-                }
-            </script>
-        </div>
-        <div class="col s8">
-            <div class="row">
-                <div class="col s12">
-                    <h5>See Friends</h5>
-                    <h6>Easy tool to search friends using registration number.</h6>
-                </div>
-                <!--<br>-->
+  
+  <div class="row">
+   <div class="col-xs-5">
+  <script id="cid0020000146488288350" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 351px;height: 470px;">{"handle":"vitapp","arch":"js","styles":{"b":100,"c":"000000","d":"000000","l":"FFFFFF","m":"FFFFFF","p":"10","r":100,"surl":0,"cnrs":"0.35","fwtickm":1}}</script>
+      </div>
+   <div class="col-xs-7">
+       <h5>See Friends</h5>
+        <h6>Easy tool to search friends using registration number.</h6><br>
                 <div class="col s2 center">
                     <button id="previousBtn" class="btn"><i class="material-icons">chevron_left</i></button>
                 </div>
                 <form class="col s8" id="getPhotoForm">
                     <div class="row">
                         <div class="input-field col s10">
-                            <input id="regno" type="text" class="validate" pattern="^[1-9]{1}[0-9]{1}[A-Za-z]{3}[0-9]{4}$" required autocomplete="off"
-                                onchange="this.value=this.value.toUpperCase()">
-                                <label for="regno" data-error="Invalid Registration Number">Registration number</label>
+                            <input id="regno" type="text" class="validate" pattern="^[1-9]{1}[0-9]{1}[A-Za-z]{3}[0-9]{4}$" required autocomplete="off" onchange="this.value=this.value.toUpperCase()">
+                            <label for="regno" data-error="Invalid Registration Number">Registration number</label>
                         </div>
                         <div class="col s2">
                             <button id="submitBtn" class="btn" type="submit"><i class="material-icons">send</i></button>
@@ -92,22 +75,23 @@
                 <div class="col s2 center">
                     <button id="nextBtn" class="btn"><i class="material-icons">chevron_right</i></button>
                 </div>
-                <div id="showPhoto" class="row center">
-                </div>
+       <div id="showPhoto" class="row center">
             </div>
-        </div>
-    </div>
+   </div>
+ </div>
+
+
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
-        $('#getPhotoForm').submit(function (e) {
+        $('#getPhotoForm').submit(function(e) {
             e.preventDefault();
             var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + $('#regno').val();
             var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
             $('#showPhoto').html(imgTag);
         });
-        $('#previousBtn').click(function () {
+        $('#previousBtn').click(function() {
             var regno = $('#regno').val();
             var reg = regno.substring(0, 5);
             var no = parseInt(regno.substring(5));
@@ -136,7 +120,7 @@
                 $('#regno').val(reg + no);
             }
         });
-        $('#nextBtn').click(function () {
+        $('#nextBtn').click(function() {
             var regno = $('#regno').val();
             var reg = regno.substring(0, 5);
             var no = parseInt(regno.substring(5));
@@ -167,3 +151,4 @@
 </body>
 
 </html>
+
