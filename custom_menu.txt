@@ -4,7 +4,7 @@
             <div class="collapsible-header"><a href="stud_home.asp" class="btn btn-flat" target="main">Home</a></div>
         </li>
         <li>
-            <div class="collapsible-header active"><a href="#" target="_self" class="btn btn-flat">Win Sem 2017</a></div>
+            <div class="collapsible-header"><a href="#" target="_self" class="btn btn-flat">Win Sem 2017</a></div>
             <div class="collapsible-body">
                 <div><a href="course_regular.asp?sem=WS" class="btn btn-flat" target="main">Timetable</a></div>
                 <div><a href="pjtwork.asp?sem=WS" class="btn btn-flat" target="main">Project</a></div>
@@ -16,7 +16,7 @@
             </div>
         </li>
         <li>
-            <div class="collapsible-header"><a href="https://vatz88.github.io/VES-API/photo_search.html" class="btn btn-flat" target="main">Search Friends</a></div>
+            <div class="collapsible-header"><a href="https://vatz88.github.io/VES-API/photo_search.html" class="btn btn-flat" target="main">For VITians</a></div>
         </li>
     </ul>
 </div>
