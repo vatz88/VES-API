@@ -28,7 +28,7 @@
        <div class="collapsible-header"><a href="student_history.asp" class="btn btn-flat" target="main">Academic History</a></div>
         </li>
         <li>
-       <div class="collapsible-header"><a href="gpa_cgpa_cal.asp" class="btn btn-flat" target="main">CGPA Calculator</a></div>
+       <div class="collapsible-header"><a href="faculty_advisor_view.asp" class="btn btn-flat" target="main">Proctor</a></div>
         </li>
     </ul>
 </div>
