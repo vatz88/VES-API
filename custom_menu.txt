@@ -15,6 +15,7 @@
                 <div><a href="marks_da.asp?sem=WS" class="btn btn-flat" target="main">Cal - Assignments</a></div>
                 <div><a href="marks.asp?sem=WS" class="btn btn-flat" target="main">Marks</a></div>
                 <div><a href="attn_report.asp?sem=WS" class="btn btn-flat" target="main">Attendance</a></div>
+                <div><a href="class_message_view.asp?sem=WS" class="btn btn-flat" target="main">Messages</a></div>
                 <div><a href="exam_schedule.asp?sem=WS" class="btn btn-flat" target="main">Exam Schedule</a></div>
             </div>
         </li>
