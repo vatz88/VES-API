@@ -4,7 +4,7 @@
             <div class="collapsible-header"><a href="stud_home.asp" class="btn btn-flat" target="main">Home</a></div>
         </li>
            <li>
-            <div class="collapsible-header"><a href="https://ves.vatz88.in/VES-API/photo_search.html" class="btn btn-flat" target="main">For VITians</a></div>
+            <div class="collapsible-header"><a href="https://ves.vatz88.in/photo_search.html" class="btn btn-flat" target="main">For VITians</a></div>
         </li>
         <li>
             <div class="collapsible-header" style="background-color: #efefef;"><a href="#" target="_self" class="btn btn-flat">Win Sem 2017</a></div>
