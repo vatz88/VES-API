@@ -149,20 +149,21 @@
             e.preventDefault();
             var regno = $('#regno').val();
 
-            var getName = $.post('https://vtop.vit.ac.in/student/hostel_roommate_eligibility.asp', {
-                stdregno: regno,
-            });
-
             var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + regno;
             var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
             $('#showPhoto').html(imgTag);
 
-            getName.done(function (name) {
-                // $('showName').html(name);
-                console.log(name);
-            });
-            getName.fail(function () {
-                console.log("Some error!");
+            $.ajax('https://vtop.vit.ac.in/student/hostel_roommate_eligibility.asp').done(function () {
+                var getName = $.post('https://vtop.vit.ac.in/student/hostel_roommate_eligibility.asp', {
+                    stdregno: regno,
+                });
+                getName.done(function (name) {
+                    // $('showName').html(name);
+                    console.log(name);
+                });
+                getName.fail(function () {
+                    console.log("Some error!");
+                });
             });
         });
     </script>
