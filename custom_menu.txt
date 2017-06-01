@@ -7,12 +7,25 @@
             <div class="collapsible-header"><a href="https://ves.vatz88.in/photo_search.html" class="btn btn-flat" target="main">For VITians</a></div>
         </li>
         <li>
-            <div class="collapsible-header" style="background-color: #efefef;"><a href="#" target="_self" class="btn btn-flat">Win Sem 2017</a></div>
+            <div class="collapsible-header" style="background-color: #efefef;"><a href="#" target="_self" class="btn btn-flat">Summer Sem 2016-17</a></div>
             <div class="collapsible-body">
-                <div><a href="course_regular.asp?sem=WS" class="btn btn-flat" target="main">Timetable</a></div>
-                <div><a href="pjtwork.asp?sem=WS" class="btn btn-flat" target="main">Project</a></div>
+                <div><a href="course_regular.asp?sem=SS" class="btn btn-flat" target="main">Time Table</a></div>
+                <div><a href="pjtwork.asp?sem=SS" class="btn btn-flat" target="main">Project Work</a></div>
+                <div><a href="attn_report.asp?sem=SS" class="btn btn-flat" target="main">Attendance</a></div>
                 <div><a href="coursepage_plan_view.asp?sem=WS" class="btn btn-flat" target="main">Course page</a></div>
-                <div><a href="marks_da.asp?sem=WS" class="btn btn-flat" target="main">Cal - Assignments</a></div>
+                <div><a href="marks_da.asp?sem=SS" class="btn btn-flat" target="main">CAL - Theory/ Lab/ Project</a></div>
+                <div><a href="marks.asp?sem=SS" class="btn btn-flat" target="main">Marks</a></div>
+                <div><a href="exam_schedule.asp?sem=SS" class="btn btn-flat" target="main">Exam Schedule</a></div>
+                <div><a href="grade.asp?sem=SS" class="btn btn-flat" target="main">Grades</a></div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header" style="background-color: #efefef;"><a href="#" target="_self" class="btn btn-flat">Winter Sem 2016-17</a></div>
+            <div class="collapsible-body">
+                <div><a href="course_regular.asp?sem=WS" class="btn btn-flat" target="main">Time Table</a></div>
+                <div><a href="pjtwork.asp?sem=WS" class="btn btn-flat" target="main">Project Work</a></div>
+                <div><a href="coursepage_plan_view.asp?sem=WS" class="btn btn-flat" target="main">Course page</a></div>
+                <div><a href="marks_da.asp?sem=WS" class="btn btn-flat" target="main">CAL - Theory/ Lab/ Project</a></div>
                 <div><a href="marks.asp?sem=WS" class="btn btn-flat" target="main">Marks</a></div>
                 <div><a href="exam_schedule.asp?sem=WS" class="btn btn-flat" target="main">Exam Schedule</a></div>
                 <div><a href="arrear_2.asp?sem=WS" class="btn btn-flat" target="main">Arrear</a></div>
