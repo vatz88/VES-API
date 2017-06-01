@@ -1,5 +1,5 @@
 <div>
-    <ul class="collapsible" data-collapsible="expandable">
+    <ul class="collapsible" data-collapsible="accordion">
         <li>
             <div class="collapsible-header"><a href="stud_home.asp" class="btn btn-flat" target="main">Home</a></div>
         </li>
