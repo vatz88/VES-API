@@ -101,7 +101,6 @@
         });
         $getPhotoForm.submit(function (e) {
             e.preventDefault();
-            $('#regno').trigger("change");
             var imageURL = 'https://vtop.vit.ac.in/student/view_photo_2.asp?rgno=' + $regno.val();
             var imgTag = '<img class="responsive-img" src="' + imageURL + '">';
             $showPhoto.html(imgTag);
