@@ -44,6 +44,9 @@
          <li>
        <div class="collapsible-header"><a href="student_history.asp" class="btn btn-flat" target="main">Academic History</a></div>
         </li>
+        <li>
+       <div class="collapsible-header"><a href="https://ffcsonthego.azurewebsites.net/" class="btn btn-flat" target="_blank">FFCS on The Go</a></div>
+        </li>
      
     </ul>
 </div>
