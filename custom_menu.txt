@@ -12,7 +12,7 @@
                 <div><a href="course_regular.asp?sem=SS" class="btn btn-flat" target="main">Time Table</a></div>
                 <div><a href="pjtwork.asp?sem=SS" class="btn btn-flat" target="main">Project Work</a></div>
                 <div><a href="attn_report.asp?sem=SS" class="btn btn-flat" target="main">Attendance</a></div>
-                <div><a href="coursepage_plan_view.asp?sem=WS" class="btn btn-flat" target="main">Course page</a></div>
+                <div><a href="coursepage_plan_view.asp?sem=SS" class="btn btn-flat" target="main">Course page</a></div>
                 <div><a href="marks_da.asp?sem=SS" class="btn btn-flat" target="main">CAL - Theory/ Lab/ Project</a></div>
                 <div><a href="marks.asp?sem=SS" class="btn btn-flat" target="main">Marks</a></div>
                 <div><a href="exam_schedule.asp?sem=SS" class="btn btn-flat" target="main">Exam Schedule</a></div>
